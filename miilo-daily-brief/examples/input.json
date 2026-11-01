@@ -1,0 +1,140 @@
+{
+  "assessmentTime": "2026-11-02T13:00:10Z",
+  "maxAgeSeconds": 60,
+  "scope": {
+    "providerIds": [
+      "codex-project",
+      "codex-local"
+    ],
+    "workspaceIds": [
+      "personal"
+    ]
+  },
+  "snapshot": {
+    "protocolVersion": "0.1",
+    "snapshotId": "synthetic-current",
+    "observedAt": "2026-11-02T13:00:00Z",
+    "providers": [
+      {
+        "id": "codex-project",
+        "name": "Observed Codex project",
+        "health": "healthy",
+        "capabilities": {
+          "observe": [
+            "tasks"
+          ],
+          "control": []
+        }
+      },
+      {
+        "id": "codex-local",
+        "name": "Observed Codex",
+        "health": "healthy",
+        "capabilities": {
+          "observe": [
+            "tasks"
+          ],
+          "control": []
+        }
+      }
+    ],
+    "workItems": [
+      {
+        "id": "task-1",
+        "providerId": "codex-project",
+        "workspaceId": "personal",
+        "kind": "task",
+        "title": "Prepare release review",
+        "summary": "Reviewing the selected change set",
+        "lifecycle": "waiting",
+        "phase": "reviewing",
+        "attention": "approval",
+        "health": "healthy",
+        "providerState": "reported state",
+        "revision": "rev-2",
+        "updatedAt": "2026-11-02T12:59:30Z",
+        "actions": []
+      },
+      {
+        "id": "task-1",
+        "providerId": "codex-local",
+        "workspaceId": "personal",
+        "kind": "task",
+        "title": "Review integration",
+        "summary": "Reviewing the selected change set",
+        "lifecycle": "active",
+        "phase": "reviewing",
+        "attention": "none",
+        "health": "healthy",
+        "providerState": "reported state",
+        "revision": "rev-2",
+        "updatedAt": "2026-11-02T12:59:30Z",
+        "actions": []
+      }
+    ]
+  },
+  "since": "2026-11-02T12:00:00Z",
+  "previousSnapshot": {
+    "protocolVersion": "0.1",
+    "snapshotId": "synthetic-baseline",
+    "observedAt": "2026-11-02T12:00:00Z",
+    "providers": [
+      {
+        "id": "codex-project",
+        "name": "Observed Codex project",
+        "health": "healthy",
+        "capabilities": {
+          "observe": [
+            "tasks"
+          ],
+          "control": []
+        }
+      },
+      {
+        "id": "codex-local",
+        "name": "Observed Codex",
+        "health": "healthy",
+        "capabilities": {
+          "observe": [
+            "tasks"
+          ],
+          "control": []
+        }
+      }
+    ],
+    "workItems": [
+      {
+        "id": "task-1",
+        "providerId": "codex-project",
+        "workspaceId": "personal",
+        "kind": "task",
+        "title": "Prepare release review",
+        "summary": "Reviewing the selected change set",
+        "lifecycle": "queued",
+        "phase": "reviewing",
+        "attention": "none",
+        "health": "healthy",
+        "providerState": "reported state",
+        "revision": "rev-1",
+        "updatedAt": "2026-11-02T11:59:00Z",
+        "actions": []
+      },
+      {
+        "id": "task-1",
+        "providerId": "codex-local",
+        "workspaceId": "personal",
+        "kind": "task",
+        "title": "Review integration",
+        "summary": "Reviewing the selected change set",
+        "lifecycle": "queued",
+        "phase": "reviewing",
+        "attention": "none",
+        "health": "healthy",
+        "providerState": "reported state",
+        "revision": "rev-1",
+        "updatedAt": "2026-11-02T11:59:00Z",
+        "actions": []
+      }
+    ]
+  }
+}
